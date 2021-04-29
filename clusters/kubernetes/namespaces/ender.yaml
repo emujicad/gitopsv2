@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Namespace
 metadata:
   labels:
-    app.kubernetes.io/name: ender
+    app.kubernetes.io/name: emujicad
     app.kubernetes.io/part-of: none
     app.kubernetes.io/version: v0.1
-  name: ender
+  name: emujicad
