@@ -2,7 +2,7 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: nginx-lab-k8s
-  namespace: flux-system
+  # namespace: lab-k8s
 spec:
   chart:
     spec:
