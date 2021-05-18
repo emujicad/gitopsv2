@@ -2,9 +2,9 @@ apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: GitRepository
 metadata:
   name: podinfo
-  # namespace: podinfo
+  # namespace: flux-system
 spec:
-  interval: 30s
+  interval: 5m
   ref:
     branch: master
   url: https://github.com/stefanprodan/podinfo
