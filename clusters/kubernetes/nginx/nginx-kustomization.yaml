@@ -13,4 +13,7 @@ spec:
         name: bitnami
         namespace: flux-system
   interval: 1m0s
-
+  install:
+    disableWait: true
+  upgrade:
+    disableWait: true
