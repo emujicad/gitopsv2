@@ -5,4 +5,4 @@ metadata:
     app.kubernetes.io/name: podinfo
     app.kubernetes.io/part-of: none
     app.kubernetes.io/version: v0.1
-  name: lab
+  name: podinfo
