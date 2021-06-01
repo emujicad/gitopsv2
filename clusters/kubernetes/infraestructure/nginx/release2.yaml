@@ -1,0 +1,18 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: prueba
+  # namespace: nginx-lab-k8s
+spec:
+  chart:
+    spec:
+      chart: testchart
+      sourceRef:
+        kind: HelmRepository
+        name: emujicadcharts
+        namespace: flux-system
+  interval: 1m0s
+  install:
+    disableWait: true
+  upgrade:
+    disableWait: true

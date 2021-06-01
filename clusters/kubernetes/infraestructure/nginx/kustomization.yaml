@@ -3,3 +3,4 @@ kind: Kustomization
 namespace: lab-k8s
 resources:
   - release.yaml
+  - release2.yaml
