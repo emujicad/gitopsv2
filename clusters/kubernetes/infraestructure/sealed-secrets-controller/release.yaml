@@ -8,7 +8,7 @@ metadata:
 spec:
   chart:
     spec:
-      chart: sealed-secrets∫
+      chart: sealed-secrets
       sourceRef:
         kind: HelmRepository
         name: bitnami-labs
