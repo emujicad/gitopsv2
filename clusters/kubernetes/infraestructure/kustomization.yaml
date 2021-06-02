@@ -4,4 +4,4 @@ resources:
   - namespaces
   - sources
   - nginx
-  - sealed-secrets
+  # - sealed-secrets
