@@ -5,3 +5,4 @@ resources:
   - bitnami.yaml
   - podinfo.yaml
   - emujicadcharts.yaml
+  - sealed-secrets.yaml
