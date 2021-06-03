@@ -5,4 +5,3 @@ resources:
   - sources
   - nginx
   - sealed-secrets-controller
-  - kubernetes-dashboard
