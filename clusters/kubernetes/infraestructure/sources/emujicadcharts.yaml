@@ -5,6 +5,6 @@ metadata:
   name: emujicadcharts
   namespace: flux-system
 spec:
-  interval: 1m0s
+  interval: 5m0s
   url: https://emujicad.github.io/helmcharts
 

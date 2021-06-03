@@ -11,7 +11,7 @@ spec:
         kind: HelmRepository
         name: bitnami
         namespace: flux-system
-  interval: 1m0s
+  interval: 5m0s
   install:
     disableWait: true
   upgrade:

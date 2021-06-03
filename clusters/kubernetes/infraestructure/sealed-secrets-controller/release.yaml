@@ -13,5 +13,5 @@ spec:
         kind: HelmRepository
         name: bitnami-labs
         namespace: flux-system
-  interval: 1m0s
+  interval: 5m0s
 
