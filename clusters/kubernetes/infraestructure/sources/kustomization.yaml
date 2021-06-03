@@ -6,4 +6,4 @@ resources:
   - podinfo.yaml
   - emujicadcharts.yaml
   - bitnami-labs.yaml
-  - kubernetes-dashboard
+  # - kubernetes-dashboard
