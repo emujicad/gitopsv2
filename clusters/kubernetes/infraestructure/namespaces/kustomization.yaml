@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
   - lab-k8s.yaml
   - podinfo.yaml
+  - kubernetes-dashboard.yaml
