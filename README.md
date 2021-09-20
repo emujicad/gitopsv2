@@ -4,7 +4,7 @@ gitopsv2 test
 
 Notes:
 
-Instalar flux em un gti provider que no sea gitlab o github. Ejemplo bitbucket
+Instalar flux en un git provider que no sea gitlab o github. Ejemplo bitbucket
 
 export USER=<user-name>   # foo-dev
 export PASSWORD=<user-password>   # foo-dev
@@ -15,13 +15,21 @@ flux bootstrap git --url=https://bitbucket.org/project/gitops-repo.git --branch=
 #Con GITLAB 
 
 export GITLAB_TOKEN=<gitlab-token>
-export CLUSTER=<k8s-cluster-name>   # foo-dev
-export GITLAB_REPO=<gitlab-repo-name> gitops-foo-dev
+export CLUSTER=<k8s-cluster-name>     # foo-dev
+export GITLAB_REPO=<gitlab-repo-name> #gitops-foo-dev
 export GITLAB_OWNER="foo/xxx/yyyy"
+export BRANCH="my-branch"
 
-flux bootstrap gitlab --ssh-hostname=gitlab.com --owner=$GITLAB_OWNER --repository=$GITLAB_REPO --branch=main --token-auth --path=clusters/$CLUSTER
-
-
+Example:
+  
+export GITLAB_TOKEN="falsetokenlol"
+export CLUSTER="my-k8s-cluster-name" 
+export GITLAB_REPO="gitopsrepo-my-k8s-cluster-name"
+export GITLAB_OWNER="aaaa/xxx/yyyy"
+export BRANCH="main|master"
+  
+flux bootstrap gitlab --ssh-hostname=gitlab.com --owner=$GITLAB_OWNER --repository=$GITLAB_REPO --branch=$BRANCH --token-auth --path=clusters/$CLUSTER
+  
 Create a sealed secret
 
 
